@@ -2,9 +2,9 @@
     Web-app to create an account and play chess games.
 </h1>
 
-# Project overview
+## Project overview
 
-Frontend  =  React
-Backend   =  Django
-Chess AI  =  Pytorch
+Frontend  =  React <br>
+Backend   =  Django <br>
+Chess AI  =  Pytorch <br>
 
