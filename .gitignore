@@ -1,0 +1,16 @@
+venv/
+.env/
+*.pyc
+__pycache__/
+
+node_modules/
+package-lock.json
+yarn.lock
+
+.env
+db.sqlite3
+static/
+media/
+
+.vscode/
+.DS_Store
