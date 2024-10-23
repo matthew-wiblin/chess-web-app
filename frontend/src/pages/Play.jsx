@@ -1,12 +1,12 @@
 import Header from "../components/Header"
 
-function Home() {
+function Play() {
     return(
-    <>  
+    <>
         <Header />
-        <div>home</div>
+        <div>play</div>
     </>
     );
 }
 
-export default Home
+export default Play
