@@ -1,0 +1,114 @@
+.chess-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
+    width: 90vw;              /* Responsive to viewport width */
+    max-width: 1000px;          /* Optional max width for larger screens */
+    margin: 0 auto;
+}
+
+.chessboard {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr); /* Responsive columns */
+    grid-template-rows: repeat(8, 1fr);    /* Responsive rows */
+    width: 100%;
+    aspect-ratio: 1;                      /* Keep chessboard square */
+    border: 2px solid black;
+}
+
+.square {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    user-select: none;
+}
+
+.square.light {
+    background-color: #f0d9b5;
+}
+
+.square.dark {
+    background-color: #b58863;
+}
+
+.square.highlight {
+    background-color: #a0db85;
+}
+
+.square.selected {
+    background-color: #ffa500;
+}
+
+.piece {
+    width: 90%;                /* Scale pieces to fit within square */
+    height: 90%;
+    object-fit: contain;       /* Ensure pieces stay within square bounds */
+}
+
+.game-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 200px;
+}
+
+.game-status-box {
+    padding: 10px;
+    font-size: 18px;
+    background-color: #eee;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    width: 100%;
+    text-align: center;
+}
+
+.move-history-box {
+    padding: 10px;
+    background-color: #eee;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    height: 300px;
+    width: 100%;
+}
+
+.history-table {
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+    max-height: 200px;
+}
+
+.history-header,
+.history-row {
+    display: grid;
+    grid-template-columns: 1fr 2fr 2fr;
+    gap: 10px;
+    padding: 5px;
+    text-align: center;
+}
+
+.history-header {
+    font-weight: bold;
+    border-bottom: 1px solid #ccc;
+    background-color: #ddd;
+}
+
+.history-row {
+    padding: 2px;
+}
+
+.reset-button {
+    padding: 10px 15px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #ff6666;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    margin-top: 15px;
+    width: 100%;
+    text-align: center;
+}

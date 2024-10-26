@@ -20,3 +20,4 @@ python manage.py runserver<br>
 npm create vite@latest frontend -- --template react<br>
 cd frontend<br>
 npm install axios react-router-dom jwt-decode<br>
+npm install chess.js
