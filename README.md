@@ -8,6 +8,8 @@ Frontend  =  React <br>
 Backend   =  Django <br>
 Chess AI  =  Pytorch <br>
 
+### List of used commands for later
+
 python3 -m venv env-venv<br>
 source env-venv/bin/activate<br>
 pip install -r requirements.txt<br>
@@ -21,3 +23,5 @@ npm create vite@latest frontend -- --template react<br>
 cd frontend<br>
 npm install axios react-router-dom jwt-decode<br>
 npm install chess.js
+npm install react-dnd react-dnd-html5-backend
+

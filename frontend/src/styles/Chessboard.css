@@ -6,6 +6,8 @@
     width: 90vw;              /* Responsive to viewport width */
     max-width: 1000px;          /* Optional max width for larger screens */
     margin: 0 auto;
+    background-color: rgb(216, 216, 216);
+    padding: 20px;
 }
 
 .chessboard {
@@ -42,8 +44,8 @@
 }
 
 .piece {
-    width: 90%;                /* Scale pieces to fit within square */
-    height: 90%;
+    width: 100%;                /* Scale pieces to fit within square */
+    height: 100%;
     object-fit: contain;       /* Ensure pieces stay within square bounds */
 }
 
@@ -70,7 +72,7 @@
     background-color: #eee;
     border: 1px solid #ccc;
     border-radius: 5px;
-    height: 300px;
+    height: 250px;
     width: 100%;
 }
 
@@ -78,7 +80,7 @@
     display: flex;
     flex-direction: column;
     overflow-y: auto;
-    max-height: 200px;
+    max-height: 220px;
 }
 
 .history-header,
@@ -112,3 +114,21 @@
     width: 100%;
     text-align: center;
 }
+
+.promotion-box {
+    margin-top: 1vw;
+    padding: 1vw;
+    background-color: #eee;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    display: flex;
+    gap: 0.5vw;
+    flex-direction: column;
+    align-items: center;
+}
+.promotion-box button {
+    padding: 0.5vw;
+    font-size: 2vw;
+    cursor: pointer;
+}
+

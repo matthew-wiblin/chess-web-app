@@ -4,8 +4,7 @@ import Chessboard from "../components/Chessboard";
 function Play() {
     return(
     <>
-        <Header />
-        <div>play</div>
+        <Header /><br />
         <Chessboard />
     </>
     );
