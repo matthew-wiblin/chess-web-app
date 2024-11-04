@@ -1,4 +1,5 @@
 import Header from "../components/Header";
+import Footer from "../components/Footer";
 import React from "react";
 import { jwtDecode } from "jwt-decode";
 import { ACCESS_TOKEN } from "../constants";
@@ -17,6 +18,7 @@ function Home() {
         <Header />
         <div>home</div>
         {console.log(decodedToken)}
+        <Footer />
     </>
     );
 }
