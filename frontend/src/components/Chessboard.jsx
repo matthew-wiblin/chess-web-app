@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Chess } from 'chess.js';
 import { DndProvider, useDrag, useDrop } from 'react-dnd';
 import { HTML5Backend } from 'react-dnd-html5-backend';
-import '../styles/ChessBoard.css';
+import '../styles/Chessboard.css';
 
 const ItemTypes = {
     PIECE: 'piece',
